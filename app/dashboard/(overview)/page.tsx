@@ -11,19 +11,19 @@ export default async function Dashboard() {
 
     const latestInvoices = await fetchLatestInvoices();
 
-    const {
+    /* const {
         numberOfCustomers,
         numberOfInvoices,
         totalPaidInvoices,
         totalPendingInvoices,
-    } = await fetchCardData()
+    } = await fetchCardData() */
 
-    /* const fetchCard = await fetchCardData();
+    const fetchCard = await fetchCardData();
 
     const totalPaidInvoices = fetchCard.totalPaidInvoices
     const totalPendingInvoices = fetchCard.totalPendingInvoices
     const numberOfInvoices = fetchCard.numberOfInvoices
-    const numberOfCustomers = fetchCard.numberOfCustomers */
+    const numberOfCustomers = fetchCard.numberOfCustomers
 
     return (
         <main>
